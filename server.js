@@ -13,7 +13,7 @@ const db = knex({
                     connection: {
                         connectionString : 'postgres://smartbraindb_gokn_user:NbLEsavMy6zPhpTTMeM8awQMYKPN1LKa@dpg-ciijidlph6erq6h28ng0-a/smartbraindb_gokn',
                         ssl: {rejectUnauthorized: false},
-                        host : 'dpg-ciijidlph6erq6h28ng0-a.oregon-postgres.render.com',
+                        host : 'dpg-ciijidlph6erq6h28ng0-a',
                         port : 5432,
                         user : 'smartbraindb_gokn_user',
                         password : 'NbLEsavMy6zPhpTTMeM8awQMYKPN1LKa',
@@ -38,4 +38,4 @@ app.put('/image', (req, res) => {image.handleImage(req, res, db)})
 
 app.post('/imageUrl', (req, res) => {image.hadleApiCall(req, res)})
 
-app.listen(5432, () => {console.log('server is working on port 3000')})
+app.listen(5432, () => {console.log('server is working on port 5432')})
