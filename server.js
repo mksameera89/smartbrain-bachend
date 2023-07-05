@@ -11,11 +11,11 @@ const image = require('./Controllers/image');
 const db = knex({
                     client: 'pg',
                     connection: {
-                    host : '127.0.0.1',
+                    host : 'dpg-cidek8tph6eounfdk970-a.oregon-postgres.render.com',
                     port : 5432,
-                    user : 'postgres',
-                    password : 'root',
-                    database : 'smartbrain'
+                    user : 'root',
+                    password : 'HvgzOlpChQ7SX7wVf8UnI28c3XYnxArf',
+                    database : 'smartbraindb_o8vf'
                     }
                 });
   
@@ -36,4 +36,4 @@ app.put('/image', (req, res) => {image.handleImage(req, res, db)})
 
 app.post('/imageUrl', (req, res) => {image.hadleApiCall(req, res)})
 
-app.listen(3000, () => {console.log('server is working on port 3000')})
+app.listen(5432, () => {console.log('server is working on port 3000')})
