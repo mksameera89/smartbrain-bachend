@@ -11,13 +11,13 @@ const image = require('./Controllers/image');
 const db = knex({
                     client: 'pg',
                     connection: {
-                        connectionString : 'postgres://smartbraindb_gokn_user:NbLEsavMy6zPhpTTMeM8awQMYKPN1LKa@dpg-ciijidlph6erq6h28ng0-a/smartbraindb_gokn',
+                        connectionString : 'postgres://smartbraindb_qxbz_user:rbruRBE4yCOKnC23vW4M6Nd4oXymRX1h@dpg-ciilt7lph6erq6js21e0-a/smartbraindb_qxbz',
                         ssl: {rejectUnauthorized: false},
-                        host : 'dpg-ciijidlph6erq6h28ng0-a',
+                        host : 'dpg-ciilt7lph6erq6js21e0-a.oregon-postgres.render.com',
                         port : 5432,
-                        user : 'smartbraindb_gokn_user',
-                        password : 'NbLEsavMy6zPhpTTMeM8awQMYKPN1LKa',
-                        database : 'smartbraindb_gokn'
+                        user : 'smartbraindb_qxbz_user',
+                        password : 'rbruRBE4yCOKnC23vW4M6Nd4oXymRX1h',
+                        database : 'smartbraindb_qxbz'
                     }
                 });
   
